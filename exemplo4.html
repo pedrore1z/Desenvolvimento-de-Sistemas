@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Âncoras HTML</title>
+    
+    <style>
+        *{scroll-behavior: smooth;} /*Seletor conringa, irá afetar todo*/
+        body{background-color: cornflowerblue; font-family: Arial, Helvetica, sans-serif; scroll-behavior: smooth;}
+        h1{color: white; text-align:center}
+        section{color: white; text-align:center; background-color: navy; height:100vh ;/*VH se adequa ao tamanho do dispositivo*/}
+        a{color:rgb(255, 255, 255); text-decoration: none; font-size:18px ;}
+    </style>
+
+
+</head>
+<body>
+    <h1 id="topo"> Trabalhando com Âncoras</h1>
+    <a href="#secao1">Ir para seção 1</a> <br>
+    <a href="#secao2">Ir para seção 2</a> <br>
+    <a href="#secao3">Ir para seção 3</a> <br>
+    <a href="#secao4">Ir para seção 4</a> <br>
+
+    <section id="secao1">
+        <h2>Seção 1</h2>
+        <a href="#topo">Voltar para o Inicio</a>
+    </section>
+
+    <section id="secao2">
+        <h2>Seção 2</h2>
+        <a href="#topo">Voltar para o Inicio</a>
+    </section>
+
+    <section id="secao3">
+        <h2>Seção 3</h2>
+        <a href="#topo">Voltar para o Inicio</a>
+    </section>
+
+    <section id="secao4">
+        <h2>Seção 4</h2>
+        <a href="#topo">Voltar para o Inicio</a>                                                                                                                                                                                    
+    </section>
+
+</body>
+</html>
