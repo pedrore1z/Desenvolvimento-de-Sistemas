@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores parte 2</title>
+    <style>
+        body{font-family: helvetica; background-color: khaki;}
+        h1{text-align: center;}
+        .bloco1{background-color: coral;font-family: helvetica; border:4px double cyan;}
+
+        /*Encadeamento de seletores*/
+        .bloco1 p{color: darkviolet;}
+
+        /*Acessando os filhos direto de bloco1*/
+        .bloco1 > p{text-decoration: underline double; text-align: right;}
+
+    </style>
+</head>
+<body>
+    <h1>Seletores CSS parte II</h1>
+
+    <section class="bloco1">
+        <p>Curso de Programação mobile</p>
+        <p>Curso de Marcenaria</p>
+        <p>Curso de aprendizagem em logística</p>
+        <article>
+            <p>Tag de parágrafo está dentro de um article</p>
+        </article>
+    </section>
+
+    <section class="bloco2">
+        <p>Curso técnico em eletrotécnica</p>
+        <p>Curso de mecatrônica</p>
+
+        <div>
+            <p>Melhores cursos você encontra aqui</p>
+        </div>
+
+    </section>
+    <p>Parágrafo após o bloco 2</p>
+    <p>2º parágrafo após o bloco2</p>
+</body>
+</html>
