@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade CSS</title>
+    <style>
+        body{background-color: #cccc99; font-family: helvetica;}
+        h1{color: firebrick; letter-spacing: 20px;}
+        
+        /*Agrupamento de Seletores*/
+        .bloco1, .bloco2{width: 800px ; box-sizing: border-box;}
+
+        .bloco1{border : 4px dotted firebrick; padding: 20px 30px; color: white; font-size: 18px; margin-bottom: 20px;}
+        #texto1{color: black; text-decoration: line-through;}
+        #texto2{color: black; text-decoration: underline;}
+        .bloco2{border: 2px solid black; border-left: 10px solid red; border-right: 5px double red; padding: 20px 40px; color: green;}
+        .bloco2 > p:first-child{text-align: right;}
+    
+    </style>
+</head>
+<body>
+    <h1>O que é tableless?</h1>
+    <section class="bloco1">
+        <p>
+            Tableless é uma forma de desenvolvimento de sites que não ultiliza tabelas para disposição de conteúdo na pagina, pois defende que os 
+            <!-- <strike>códigos HTML</strike>  -->
+            <span id=texto1 >códigos HTML</span> 
+            deveriam ser usados para o proposito de foram criados, sendo que tabelas foram criadas 
+            <!-- <u>para exibir dados tabulares.</u> -->
+            <span id=texto2  >para exibir dados tabulares.</span>
+             A W3C também não desaprova o uso de tabelas, desde que elas sejam ultilizadas para tabular dados e não para formatar layout. Muitos navegadores travam ou exibem incorretamente formatações usando tabelas.
+        </p>
+    </section>
+    <section class="bloco2">
+        <p>Dentre as possiveis vantagens da metodologia, estão a diminuição do peso da página (na realidade, o conteúdo da página é mostrado mais rápido, o que não significa que o peso da página seja menor - isso, é claro, sempre dependendo de como o HTML é feito) e melhora da acessibilidade - podem ser visto em dispositivos móveis sem necessidade de versão especial e por deficientes visuais, embora não sejam muitos sites tableless que carregam atualmente esta segunda característica.</p>
+        <p>
+            HTML<br>CSS<br>Tableless
+        </p>
+    </section>
+</body>
+</html>

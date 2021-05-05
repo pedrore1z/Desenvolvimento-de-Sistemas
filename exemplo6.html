@@ -7,13 +7,20 @@
     <style>
         body{font-family: helvetica; background-color: khaki;}
         h1{text-align: center;}
-        .bloco1{background-color: coral;font-family: helvetica; border:4px double cyan;}
+        .bloco1{background-color:darkblue;font-family: helvetica; border:4px double palevioletred; margin-bottom: 20px; width: 500px; padding: 15px; box-sizing: border-box;}
 
         /*Encadeamento de seletores*/
-        .bloco1 p{color: darkviolet;}
+        .bloco1 p{color: white;}
 
         /*Acessando os filhos direto de bloco1*/
         .bloco1 > p{text-decoration: underline double; text-align: right;}
+
+        .bloco2 > p{color: darkblue;}
+        .bloco2{background-color: yellow; border: 4px double black; width: 500px; box-sizing: border-box; padding: 15px;}
+        /* Ultilizando seletor adjacente '+' para selecionar a tag de parágrafo exatamente após o bloco 2 */
+        .bloco2 + p{background-color: black ; border: 4px double white; text-transform: uppercase; padding: 15px; width: 500px; box-sizing: border-box; color: white;}
+       
+
 
     </style>
 </head>
